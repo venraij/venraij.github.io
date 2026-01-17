@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "blog/1.0.0": {
+        "dependencies": {
+          "BlazorStatic": "1.0.0-beta.16"
+        },
+        "runtime": {
+          "blog.dll": {}
+        }
+      },
+      "BlazorStatic/1.0.0-beta.16": {
+        "dependencies": {
+          "Markdig": "0.39.1",
+          "YamlDotNet": "16.3.0"
+        },
+        "runtime": {
+          "lib/net9.0/BlazorStatic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Markdig/0.39.1": {
+        "runtime": {
+          "lib/net9.0/Markdig.dll": {
+            "assemblyVersion": "0.39.0.0",
+            "fileVersion": "0.39.1.0"
+          }
+        }
+      },
+      "YamlDotNet/16.3.0": {
+        "runtime": {
+          "lib/net8.0/YamlDotNet.dll": {
+            "assemblyVersion": "16.0.0.0",
+            "fileVersion": "16.3.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "blog/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlazorStatic/1.0.0-beta.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OcYi2aa0/vThcwY3Zul2X82h5U9gzjmPaq7jd9HiZbdIer6GsuRZQK9d93et1RDi9qPY54cvZ+yqWYXdWZiTJg==",
+      "path": "blazorstatic/1.0.0-beta.16",
+      "hashPath": "blazorstatic.1.0.0-beta.16.nupkg.sha512"
+    },
+    "Markdig/0.39.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QrH/Aq9A5P7fIdy4tEBQGqVvrJoEew9+jL0k2WlrmgD0yxXP0UUtdkhJWgpVgwT18R0ubpt9cyF+LQXbTUSOrg==",
+      "path": "markdig/0.39.1",
+      "hashPath": "markdig.0.39.1.nupkg.sha512"
+    },
+    "YamlDotNet/16.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SgMOdxbz8X65z8hraIs6hOEdnkH6hESTAIUa7viEngHOYaH+6q5XJmwr1+yb9vJpNQ19hCQY69xbFsLtXpobQA==",
+      "path": "yamldotnet/16.3.0",
+      "hashPath": "yamldotnet.16.3.0.nupkg.sha512"
+    }
+  }
+}
