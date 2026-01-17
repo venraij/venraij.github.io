@@ -16,7 +16,7 @@ able to trigger the assistant using "Hey MurderBot" and confuse the hell out of 
 
 ![ha assistant](media/ha-assistant.png)
 
-## Step 1: What do I need get started?
+## Step 1: What do I need to get started?
 I already had the basic requirements to get started. I've got Home Assistant running on a Raspberry Pi 5 and I have a 
 home server with a NVIDIA GPU GTX 970 (any decently modern dedicated or integrated GPU should work though) that can run Ollama. 
 A CPU could also be used technically, but I would probably die of old age before I ever find out what the weather will be today.
