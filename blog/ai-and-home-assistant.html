@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        primary: tailwind.colors.violet
+                    },
+                },},
+                }
+    </script>
+
+
+    </head>
+
+<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-800">VenRaij</div></div></a></div>
+    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
+                </a><a href="tags" class="hidden font-medium text-gray-100 sm:block">Tags
+                </a><a href="https://github.com/BlazorStatic/blog" class="hidden font-medium text-gray-100 sm:block">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
+            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
+                            </a></div><div class="px-12 py-4"><a href="tags" class="text-2xl font-bold tracking-widest text-gray-100">Tags
+                            </a></div><div class="px-12 py-4"><a href="https://github.com/BlazorStatic/blog" class="text-2xl font-bold tracking-widest text-gray-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></div></nav></div></div></header>
+<script>
+//👎 but what can I do? It's a static html. I can't use C# here.
+ const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+ 
+ document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
+ document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
+</script>
+
+        <main class="mb-auto"><article><div class="xl:divide-y  xl:divide-gray-700"><header class="pt-6 xl:pb-6"><div class="space-y-1 text-center"><dl class="space-y-10"><div><dt class="sr-only">Published on</dt>
+                        <dd class="text-base font-medium leading-6 text-gray-400"><time datetime="2026-01-18T00:00:00.000">January 18, 2026</time></dd></div></dl>
+                <div class="prose prose-invert mx-auto"><h1 class>Setting up an AI assistant using Home Assistant and Ollama</h1></div></div></header>
+        <div class="grid-rows-[auto_1fr] divide-y  pb-8 divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0"><dl class="pb-10 pt-6 xl:border-b  xl:pt-11 xl:border-gray-700"><dt class="sr-only">Authors</dt>
+                <dd><ul class="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8"><li class="flex items-center space-x-2"><dl class="whitespace-nowrap text-sm font-medium leading-5"><dt class="sr-only">Name</dt>
+                                        <dd class="text-gray-900 dark:text-gray-100 flex gap-1 items-center">Nick van Raaij<a target="_blank" rel="noopener noreferrer" href="https://github.com/VenRaij" class="flex gap-1 items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 w-4 h-4 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></dd></dl></li></ul></dd></dl>
+            <div class="divide-y  divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0"><div class="prose prose-invert max-w-none pb-8 pt-10"><h3 id="smartification">Smartification</h3>
+<p>I've been in a smartification mood recently and this has resulted in something pretty cool in my opinion.
+I found out that it's quite easy to set up an AI assistant at home using Home Assistant and Ollama. As long as you have
+the proper requirements. And I did hit a couple of roadblocks, so I'll share my experience here. The final goal is to be
+able to trigger the assistant using &quot;Hey MurderBot&quot; and confuse the hell out of my guests.</p>
+<p>Oh, quick heads up, this is not a step-by-step tutorial. It's more of a &quot;Here's what I did and how it worked out for
+me&quot; kind of thing. Also, most screenshots will contain Dutch text, sorry about that, but you'll just have to learn our
+cheesy language if you want to read them.</p>
+<p><img src="Content/Blog/media/ha-assistant.png" alt="ha assistant" /></p>
+<h2 id="step-1-what-do-i-need-to-get-started">Step 1: What do I need to get started?</h2>
+<p>I already had the basic requirements to get started. I've got Home Assistant running on a Raspberry Pi 5 and I have a
+home server with an NVIDIA GPU GTX 970 (any decently modern dedicated or integrated GPU should work though) that can run Ollama.
+A CPU could also be used technically, but I would probably die of old age before I ever find out what the weather will be today.
+If you don't have these things yet, you need to get them first. It would be handy if the server has docker installed,
+you could do this without docker but unless you've got some kind of fetish for pain and suffering I wouldn't recommend it.</p>
+<h2 id="step-2-what-am-i-even-trying-to-achieve">Step 2: What am I even trying to achieve?</h2>
+<p>So at some point I realized that I needed to figure out what I wanted to do with this setup. Of course then I thought,
+&quot;Who cares?! Just do it because it's fun!&quot;. Well my experience has taught me it's better to have a plan.
+So I decided that I wanted it to be able to do the following things:</p>
+<ul>
+<li>Ask the assistant questions like &quot;What's the weather like today?&quot; or &quot;Is the heating on?&quot;</li>
+<li>Control smart devices like &quot;Turn on the living room lights&quot; or &quot;Set the thermostat to 22 degrees&quot;.</li>
+<li>Ask questions about locational data like &quot;Who is at home?&quot;.</li>
+<li>Be able to talk instead of typing.</li>
+<li>The assistant should be able to talk as well.</li>
+</ul>
+<p>Eventually I'd like to be able to trigger the AI assistant using wake words, but I haven't gotten that far yet.
+It would also be cool if it could greet me when I come home, but again, haven't gotten that far yet.</p>
+<h2 id="step-3-setting-up-ollama">Step 3: Setting up Ollama</h2>
+<p>Setting up Ollama with docker is quite easy, it doesn't require a lot of configuration and is basically ready to go.
+I used docker compose to set it up with the following configuration:</p>
+<pre><code>services:
+  ollama:
+    image: ollama/ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    container_name: ollama
+    volumes:
+      - /var/lib/ollama:/root/.ollama
+    ports:
+      - 11434:11434
+</code></pre>
+<p>I've set it up for an NVIDIA GPU as you can see in the &quot;deploy&quot; property. This part differs for each kind of gpu you'd like
+to use. The deployment part can be left out when using the CPU for running the model.</p>
+<p>When running <code>docker compose up</code> this results in a running Ollama server on port 11434. This server doesn't have any
+model setup yet but that turned out not to be an issue.</p>
+<h2 id="step-4-setting-up-whisper-in-home-assistant">Step 4: Setting up Whisper in Home Assistant</h2>
+<p>Home Assistant needs a way to recognize my speech and convert it into text for the LLM (Large Language Model) to use it.
+For this the internet seemed to recommend Whisper. Whisper is actually available as an addon when you are
+using Home Assistant OS. When Home Assistant OS isn't being used a docker container could also be used. I'm running
+Home Assistant OS, so I decided to use the addon. The configuration that I used can be found in the screenshot.</p>
+<p><img src="Content/Blog/media/whisper-screenshot.png" alt="whisper addon" /></p>
+<p>Important here is the Model choice. I personally chose the base model because I found it way more accurate than the
+tiny-8int model. The downside is that the base model takes a bit longer to process the audio, but I can live with that.
+The difference in time is negligible for my use case.</p>
+<h2 id="step-5-setting-up-the-ollama-integration-in-home-assistant">Step 5: Setting up the Ollama integration in Home Assistant</h2>
+<p>Alright, we have Ollama running and we have Whisper set up. Now it's time for me to connect the two using
+the Ollama integration. This integration is available by default in Home Assistant so no need to install anything.
+Setting it up was quite easy, I just needed to provide the host and port of my Ollama server.</p>
+<p><img src="Content/Blog/media/ollama-integration.png" alt="ollama integration" /></p>
+<p>After setting up the connection I needed to set up the right configuration. This had to be done in the following screen.</p>
+<p><img src="Content/Blog/media/ollama-config.png" alt="ollama config" /></p>
+<p>Here I noticed that many of the models that could be used according to the dropdown didn't work well, as in,
+they gave weird errors. A lot of models where also way too much for my GTX 970 to handle, so eventually I settled on
+using qwen2.5:3b. This model is accurate and fast enough in my opinion. Although my GPU is still going through
+hell each time I ask the model what the weather is. But that has more to do with the age of the GPU and less to do with the
+model itself.</p>
+<h2 id="step-6-le-piece-la-resistance-creating-the-assistant-using-home-assistants-conversation-integration">Step 6: Le piece la resistance - Creating the assistant using Home Assistant's Conversation integration</h2>
+<p>Ah, yes everything is coming together nicely now. We have Ollama running, we have Whisper set up, and we have the
+Ollama integration. Now I've just got to set up the actual assistant. This can be easily done through the settings menu
+in Home Assistant. I set up an assistant called &quot;Jarvis&quot; for now. For the language I chose Dutch, because I like cheese
+a lot, which obviously means that I am Dutch. For the conversation agent I chose &quot;Ollama Conversation&quot;. I enabled text
+to speech with Google (YUK, gotta change this at some point) and I enabled speech to text with Whisper.</p>
+<p>Perfect, now I can talk to my assistant. Well... that's what I thought at least. I spoke my beautiful Dutch to it,
+but it just kept creating the weirdest responses. For some reason it also thought Dutch was English. After some trial
+and error I found out that Dutch support currently sucks. So I changed it to English and voilà. The assistant started
+to understand me, or more like was able to calculate a logical response. Because it would have been terrifying
+if it actually understood me. Also giving a really smart entity control of my house would probably be a bad idea.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So there you have it, setting up an AI assistant at home isn't as hard as you might think. Although you might hit some roadblocks,
+and you need the right hardware, it's definitely doable. I'm quite happy with the results so far, although there is still a lot of room for improvement.
+Next steps for me are to get wake word detection working, improve the text to speech quality and make the assistant a bit more personable.
+But for now, I'm just enjoying having a smart assistant at home. Hey Jarvis (Gotta change this to MurderBot at some point), what's the weather like today?</p>
+<h2 id="so-whats-next">So what's next?</h2>
+<p>Well turns out I still have an old gaming pc lying around in my attic. So I thought it would be a good idea to repurpose that as a home server.
+Just gotta transplant the hard drives, install OpenMediaVault, setup Nvidia drivers, setup Docker,
+make sure the pc doesn't go in a boot loop (Uh spoilers).</p>
+</div>
+                <div class="pb-6 pt-6 text-sm text-gray-300"><a target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/blog/tree/main/Content/Blog/ai-and-home-assistant">View on GitHub</a></div></div>
+            <footer><div class=" text-sm font-medium leading-5 divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y"><div class="py-4 xl:py-8"><h2 class="text-xs uppercase tracking-wide text-gray-400">Tags</h2>
+                        <div class="flex flex-wrap"><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/Home Assistant">Home Assistant</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/AI">AI</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/Ollama">Ollama</a></div></div></div>
+                <div class="pt-4 xl:pt-8"><a class="text-primary-500 hover:text-primary-400" aria-label="Back to the home" href>← Back to the home</a></div></footer></div></div></article></main>
+
+        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/blog"><span class="sr-only">github</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
+                    <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://x.com/"><span class="sr-only">x</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="hover:text-primary-400 h-6 w-6 fill-current text-gray-200"><path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path></svg></a></div>
+                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/BlazorStatic"> Built with Blazor Static</a>
+                    <div>•</div>
+                    <div>© 2026</div></div></div></footer></div></div>
+        <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate></body></html>
