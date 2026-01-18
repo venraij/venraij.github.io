@@ -37,5 +37,32 @@ Eventually I'd like to be able to trigger the AI assistant using wake words, but
 It would also be cool if it could greet me when I come home, but again, haven't gotten that far yet.
 
 ## Step 3: Setting up Ollama
+Setting up Ollama with docker is quite easy, it doesn't require a lot of configuration and is basically ready to got.
+I used docker compose to set it up with the following configuration:
+
+```
+services:
+  ollama:
+    image: ollama/ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    container_name: ollama
+    volumes:
+      - /var/lib/ollama:/root/.ollama
+    ports:
+      - 11434:11434
+```
+I've set it up for an NVIDIA GPU as you can see in the "deploy" property. This part differs each kind of gpu you'd like 
+to use. The deploy part can be left out when using the CPU for running the model.
+
+When running ``docker compose up`` this results in a running Ollama server on port 11434. This server doesn't have any 
+model setup yet but that turned out not to be an issue..
+
+## Step 4: Setting up Whisper in Home Assistant
 
 
