@@ -63,7 +63,7 @@ public static class WebsiteKeys
 {
     public const string GitHubRepo = "https://github.com/BlazorStatic/blog";
     public const string X = "https://x.com/";
-    public const string Title = "VenRaij";
+    public const string Title = "NickVanRaaij";
     public const string BlogPostStorageAddress = $"{GitHubRepo}/tree/main/Content/Blog";
     public const string BlogLead = "Gotta read them all";
 }

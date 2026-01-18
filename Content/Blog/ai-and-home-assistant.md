@@ -2,7 +2,7 @@
 title: Setting up an AI assistant using Home Assistant and Ollama
 lead: Setting up an AI assistant isn't as hard as you might think. Although you might hit some roadblocks and you need the right hardware, it's definitely doable.
 published: 2026-01-18
-tags: [Home Assistant, AI, Ollama]
+tags: [HomeAssistant, AI, Ollama]
 authors:
     - name: "Nick van Raaij"
       gitHubUserName: "VenRaij"
