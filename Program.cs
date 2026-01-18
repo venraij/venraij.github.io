@@ -61,7 +61,7 @@ app.Run();
 
 public static class WebsiteKeys
 {
-    public const string GitHubRepo = "https://github.com/BlazorStatic/blog";
+    public const string GitHubRepo = "https://github.com/venraij/venraij.github.io";
     public const string X = "https://x.com/";
     public const string Title = "NickVanRaaij";
     public const string BlogPostStorageAddress = $"{GitHubRepo}/tree/main/Content/Blog";
